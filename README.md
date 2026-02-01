@@ -1,13 +1,15 @@
 # TAAPI Go Library
 
-![TAAPI Go](https://github.com/user-attachments/assets/69dae5e6-56bc-4973-9ea2-920f9eaa7d75)
+![TAAPI Golang](https://github.com/user-attachments/assets/2ae4ca61-37ef-4ec3-bee7-75b03cabedfa)
 
-Modern Go library for taapi.io technical analysis API. Features fluent interface, type-safe enums, comprehensive error handling, and full API coverage. Supports direct indicators, bulk requests, and manual calculations with custom candle data. Production-ready with complete test coverage.
+Modern Go library for taapi.io technical analysis API. Features fluent interface, type-safe enums, comprehensive error
+handling, and full API coverage. Supports direct indicators, bulk requests, and manual calculations with custom candle
+data. Production-ready with complete test coverage.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Go Version](https://img.shields.io/badge/go-%3E%3D1.21-blue)](https://golang.org)
 
-Modern, idiomatic Go library for the [taapi.io](https://taapi.io/) technical analysis API.
+Modern, idiomatic Golang library for the [taapi.io](https://taapi.io/) technical analysis API.
 
 ## Features
 
@@ -34,13 +36,13 @@ package main
 import (
     "fmt"
     "log"
-    
+
     "github.com/tigusigalpa/taapi-go"
 )
 
 func main() {
     client := taapi.NewClient("YOUR_API_SECRET")
-    
+
     // Get RSI indicator
     rsi, err := client.
         Exchange(taapi.ExchangeBinance).
@@ -48,11 +50,11 @@ func main() {
         Interval(taapi.Interval1h).
         Indicator(taapi.IndicatorRSI).
         Get()
-    
+
     if err != nil {
         log.Fatal(err)
     }
-    
+
     fmt.Printf("RSI: %v\n", rsi.GetValue())
 }
 ```
@@ -321,13 +323,13 @@ if err != nil {
         fmt.Printf("Rate limit exceeded. Retry after: %d seconds\n", rateLimitErr.RetryAfter)
         return
     }
-    
+
     // Check for API error
     if apiErr, ok := err.(*taapi.Error); ok {
         fmt.Printf("API Error [%d]: %s\n", apiErr.StatusCode, apiErr.Message)
         return
     }
-    
+
     // General error
     log.Fatal(err)
 }
@@ -455,6 +457,7 @@ This library is open-sourced software licensed under the [MIT license](LICENSE).
 ## Author
 
 **Igor Sazonov**
+
 - Email: sovletig@gmail.com
 - GitHub: [@tigusigalpa](https://github.com/tigusigalpa)
 
@@ -464,4 +467,5 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## Support
 
-If you encounter any issues or have questions, please [open an issue](https://github.com/tigusigalpa/taapi-go/issues) on GitHub.
+If you encounter any issues or have questions, please [open an issue](https://github.com/tigusigalpa/taapi-go/issues) on
+GitHub.
